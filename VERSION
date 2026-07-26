@@ -1,4 +1,19 @@
-Junaid Academic Portfolio Website V2.5 — ICSC 2026 Qualification Round Update
-Source base: V2.4 Curated Certificate Gallery
-Updates: added ICSC 2026 Qualification Round Pass / Special Honour / Pre-Final qualification, updated portfolio PDF asset, and included the local ICSC 2026 certificate image.
-Date: 20 July 2026
+Junaid Academic Portfolio Website — Version 2.5
+
+Updated: 25 July 2026
+
+Added:
+- Edu.Harbour Competition Journey with accessible edition tabs for ICSC 2025 and 2026
+- IYMC 2025 and IPhyC 2025 progression cards with certificate evidence
+- Official IJHS GSLC member-list verification link
+- YALA camp-journey and Outstanding Leader interview videos
+- Privacy-enhanced, lazy-loaded YouTube embeds with direct-link fallbacks
+- New Official Recognition & Media section
+- Updated navigation, metadata, structured data, document links, and mobile styling
+
+Preserved:
+- Correct Vercel portfolio URL
+- Final submitted SaiHanMyoShane_Technical_Portfolio_SASH.pdf
+- WISE-StudentLLM-Bench work-sample package
+- Certificate Gallery
+- AIdea and planned Mustang Math Tournament content
