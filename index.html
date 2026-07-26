@@ -7,8 +7,8 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Sai Han Myo Shane (Junaid) | AI Safety & Academic Portfolio</title>
-  <meta name="description" content="Academic and AI safety portfolio of Sai Han Myo Shane, also known as Junaid, a Myanmar high-school student, IOAI 2026 Myanmar National Team Member, and ICSC 2026 Qualification Round Pass / Pre-Final qualifier with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, student leadership, responsible AI literacy, and a curated public certificate and evidence gallery." />
-  <meta name="keywords" content="Sai Han Myo Shane, Junaid, Myanmar, IOAI 2026, ICSC 2026, ICSC Pre-Final, AI safety, LLM evaluation, WISE-StudentLLM-Bench, cybersecurity, CodeCombat, ICSC, ICO, NIEC International School, GSLC, SPARK AIdea, Mustang Math Tournament, certificates, academic evidence, awards gallery" />
+  <meta name="description" content="Academic and AI safety portfolio of Sai Han Myo Shane, also known as Junaid, a Myanmar high-school student and IOAI 2026 Myanmar National Team Member with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, Edu.Harbour competitions, student leadership, responsible AI literacy, official recognition, interviews, and a curated public certificate and evidence gallery." />
+  <meta name="keywords" content="Sai Han Myo Shane, Junaid, Myanmar, IOAI 2026, AI safety, LLM evaluation, WISE-StudentLLM-Bench, cybersecurity, CodeCombat, ICSC, IYMC, IPhyC, Edu.Harbour, ICO, NIEC International School, GSLC, SPARK AIdea, Mustang Math Tournament, YALA, interviews, certificates, academic evidence, awards gallery" />
   <meta name="author" content="Sai Han Myo Shane" />
 
   <style>
@@ -316,9 +316,137 @@
     }
     .privacy-note strong { color: var(--text); }
 
+
+    /* Edu.Harbour journey */
+    .journey-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .journey-card {
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 30px rgba(20, 32, 60, 0.07);
+    }
+    .journey-card.featured { grid-column: 1 / -1; }
+    .journey-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    .journey-head h3 { margin: 6px 0 0; font-size: 23px; line-height: 1.3; }
+    .edition-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin: 4px 0 18px;
+    }
+    .edition-tab {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      padding: 9px 14px;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .edition-tab[aria-selected="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .stage-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .stage-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #f9fbff;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .stage-pill.complete { background: var(--green-soft); border-color: #bfe7df; color: var(--accent-2); }
+    .stage-pill.current { background: var(--accent-soft); border-color: #cdd7ff; color: var(--accent); }
+    .stage-pill.award { background: var(--gold-soft); border-color: #f0d58d; color: #7d5b0f; }
+    .stage-arrow { color: #9aa4b7; font-weight: 900; }
+    .journey-highlight {
+      margin: 14px 0 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent-soft), #f7f9ff);
+      border-left: 4px solid var(--accent);
+    }
+    .journey-highlight strong { color: var(--text); }
+    .journey-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+
+    /* Official recognition and media */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .media-card {
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 30px rgba(20, 32, 60, 0.07);
+    }
+    .media-card.official {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 22px 24px;
+    }
+    .media-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: linear-gradient(135deg, var(--accent-soft), var(--green-soft));
+      font-size: 25px;
+    }
+    .media-card.official h3, .media-body h3 { margin: 0 0 7px; }
+    .media-card.official p, .media-body p { margin: 0; color: var(--muted); }
+    .video-wrap {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #0f172a;
+    }
+    .video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .media-body { padding: 20px 22px 22px; }
+    .media-body .certificate-actions { margin-top: 14px; }
+
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; padding-top: 52px; }
-      .grid, .grid.two, .certificate-grid { grid-template-columns: 1fr; }
+      .grid, .grid.two, .certificate-grid, .journey-grid, .media-grid { grid-template-columns: 1fr; }
+      .journey-card.featured, .media-card.official { grid-column: auto; }
+      .media-card.official { grid-template-columns: auto 1fr; }
+      .media-card.official .evidence-link { grid-column: 1 / -1; justify-self: start; }
       .timeline-item { grid-template-columns: 1fr; }
       .nav { align-items: flex-start; flex-direction: column; }
       .nav-links { justify-content: flex-start; }
@@ -331,7 +459,7 @@
     "@type": "Person",
     "name": "Sai Han Myo Shane",
     "alternateName": "Junaid",
-    "description": "Myanmar high-school student, IOAI 2026 Myanmar National Team Member, and ICSC 2026 Qualification Round Pass / Pre-Final qualifier with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, student leadership, responsible AI literacy, and a curated public certificate and evidence gallery.",
+    "description": "Myanmar high-school student and IOAI 2026 Myanmar National Team Member with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, Edu.Harbour competitions, student leadership, responsible AI literacy, official recognition, interviews, and a curated public certificate and evidence gallery.",
     "nationality": "Myanmar",
     "affiliation": {
       "@type": "EducationalOrganization",
@@ -350,6 +478,23 @@
       "Peer Teaching",
       "Innovation"
     ],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "IJHS Global Student Leadership Council — Student Development Committee",
+      "url": "https://ijhscommunity.org/about-us/slc/"
+    },
+    "subjectOf": [
+      {
+        "@type": "VideoObject",
+        "name": "Inspiring YALA Camp Journey of NIEC Student Sai Han Myo Shane",
+        "url": "https://youtu.be/M7P0fuPF0Lg"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Sai Han Myo Shane (Junaid) | YALA 2025 Platinum Scholar & Outstanding Leader Interview",
+        "url": "https://youtu.be/a57nPOai-ng"
+      }
+    ],
     "url": "https://sai-han-myo-shane-portfolio.vercel.app"
   }
   </script>
@@ -363,10 +508,12 @@
         <a href="#about">About</a>
         <a href="#ai-safety">AI Safety Project</a>
         <a href="#achievements">Achievements</a>
+        <a href="#eduharbour">Edu.Harbour Journey</a>
         <a href="#certificates">Certificates</a>
         <a href="#computing">Computing & Cybersecurity</a>
         <a href="#academics">Academics</a>
         <a href="#leadership">Leadership</a>
+        <a href="#media">Media</a>
         <a href="#documents">Documents</a>
         <a href="#contact">Contact</a>
       </div>
@@ -379,13 +526,13 @@
         <div class="eyebrow">AI Safety • LLM Evaluation • Myanmar Student Portfolio</div>
         <h1>Sai Han Myo Shane<br />Junaid</h1>
         <p class="subtitle">
-          High-school / secondary student from Myanmar, IOAI 2026 Myanmar National Team Member, ICSC 2026 Qualification Round Pass / Pre-Final qualifier, and developer of
+          High-school / secondary student from Myanmar, IOAI 2026 Myanmar National Team Member, and developer of
           WISE-StudentLLM-Bench, a preliminary student-facing LLM safety evaluation and AI safety literacy work sample.
         </p>
         <div class="hero-buttons">
           <a class="button" href="#ai-safety">View AI Safety Project</a>
           <a class="button secondary" href="https://github.com/SaiHanMyoShane/WISE-StudentLLM-Bench" target="_blank" rel="noopener">GitHub Repository</a>
-          <a class="button green" href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download Updated ICSC CV / Portfolio PDF</a>
+          <a class="button green" href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download Final Portfolio PDF</a>
         </div>
       </div>
 
@@ -395,7 +542,7 @@
           <li><strong>Current stage:</strong> High-school / secondary student</li>
           <li><strong>School:</strong> NIEC International School, Yangon</li>
           <li><strong>Pathway:</strong> Cambridge Upper Secondary / Cambridge ICE</li>
-          <li><strong>Recognition:</strong> IOAI 2026 Myanmar National Team Member; ICSC 2026 Qualification Round Pass / Pre-Final qualifier</li>
+          <li><strong>Recognition:</strong> IOAI 2026 Myanmar National Team Member</li>
           <li><strong>Technical focus:</strong> AI safety, LLM evaluation, cybersecurity, coding, mathematics</li>
         </ul>
       </aside>
@@ -415,8 +562,8 @@
         <p>
           Sai Han Myo Shane, also known as Junaid, is a high-school student from Myanmar with a developing technical focus in
           artificial intelligence, AI safety, LLM evaluation, cybersecurity, computing, mathematics, and responsible technology use.
-          He is pursuing the Cambridge Upper Secondary / Cambridge ICE pathway at NIEC International School in Yangon, has
-          received a two-year academic half scholarship, and has passed the ICSC 2026 Qualification Round with Special Honour and qualification to the Pre-Final Round.
+          He is pursuing the Cambridge Upper Secondary / Cambridge ICE pathway at NIEC International School in Yangon and has
+          received a two-year academic half scholarship.
         </p>
         <p>
           His current research direction is WISE-StudentLLM-Bench: a preliminary student-facing LLM safety evaluation artifact that
@@ -499,9 +646,9 @@
         </article>
 
         <article class="card">
-          <span class="tag">ICSC 2025 & 2026</span>
+          <span class="tag">ICSC 2025</span>
           <h3>International Computer Science Competition</h3>
-          <p>ICSC 2026 Qualification Round Pass with Special Honour and qualification to the Pre-Final Round; ICSC 2025 Final Round Participant and 2nd National Award, Myanmar.</p>
+          <p>Final Round Participant; 2nd National Award, Myanmar; highest score among Myanmar participants in the Final Round; Special Honours in the Qualification Round with a score of 23.7/25.</p>
         </article>
 
         <article class="card">
@@ -518,6 +665,112 @@
       </div>
     </section>
 
+
+
+    <section id="eduharbour">
+      <div class="section-head">
+        <div>
+          <h2>Edu.Harbour Competition Journey</h2>
+          <p class="section-note">A clear multi-year view of Junaid’s participation across computer science, mathematics, and physics competitions, showing progression by edition and round.</p>
+        </div>
+        <a class="evidence-link" href="https://eduharbour.com/programs" target="_blank" rel="noopener noreferrer">Edu.Harbour Programmes</a>
+      </div>
+
+      <div class="journey-grid">
+        <article class="journey-card featured">
+          <div class="journey-head">
+            <div>
+              <span class="tag">Computer Science</span>
+              <h3>International Computer Science Competition (ICSC)</h3>
+            </div>
+            <a class="evidence-link" href="https://icscompetition.org/" target="_blank" rel="noopener noreferrer">Official ICSC</a>
+          </div>
+
+          <div class="edition-tabs" role="tablist" aria-label="ICSC editions">
+            <button class="edition-tab" type="button" role="tab" aria-selected="true" aria-controls="icsc-2026" id="tab-icsc-2026" data-edition-tab="icsc-2026">2026 Edition</button>
+            <button class="edition-tab" type="button" role="tab" aria-selected="false" aria-controls="icsc-2025" id="tab-icsc-2025" data-edition-tab="icsc-2025">2025 Edition</button>
+          </div>
+
+          <div class="edition-panel" id="icsc-2026" role="tabpanel" aria-labelledby="tab-icsc-2026">
+            <div class="stage-row" aria-label="ICSC 2026 progress">
+              <span class="stage-pill complete">✓ Qualification Round</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill award">★ Special Honour</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill current">Pre-Finalist</span>
+            </div>
+            <div class="journey-highlight"><strong>Current status:</strong> Passed the 2026 Qualification Round with Special Honour and qualified for the Pre-Final Round.</div>
+            <div class="journey-actions">
+              <a class="evidence-link primary" href="https://drive.google.com/file/d/1RD7eTFKQ2Ksqhyvp1kDt9a0b1hSiP_V_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Qualification Certificate</a>
+            </div>
+          </div>
+
+          <div class="edition-panel" id="icsc-2025" role="tabpanel" aria-labelledby="tab-icsc-2025" hidden>
+            <div class="stage-row" aria-label="ICSC 2025 progress">
+              <span class="stage-pill complete">✓ Qualification</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill complete">✓ Pre-Final</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill complete">✓ Final</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill award">★ National Award</span>
+            </div>
+            <div class="journey-highlight"><strong>2nd National Award, Myanmar:</strong> Final Round participant with the highest score among Myanmar participants in the Final Round.</div>
+            <div class="journey-actions">
+              <a class="evidence-link" href="https://drive.google.com/file/d/1gFVJuBIn1id3F_ISFJa2HJXFMniyyuc4/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Qualification</a>
+              <a class="evidence-link" href="https://drive.google.com/file/d/1jwFT7oY-Dso1Yo0NtjJ7yMz8Yj7cyyoS/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Pre-Final</a>
+              <a class="evidence-link" href="https://drive.google.com/file/d/1thyJXiaW91zVv8091Wll-i-F9KGtXUfb/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Final Certificate</a>
+              <a class="evidence-link primary" href="https://drive.google.com/file/d/1TNqRadn8Bi66Joc9rqZQCmrPfKIn42dC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">National Award</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="journey-card">
+          <div class="journey-head">
+            <div>
+              <span class="tag green">Mathematics</span>
+              <h3>International Youth Math Challenge (IYMC)</h3>
+            </div>
+            <a class="evidence-link" href="https://iymc.info/" target="_blank" rel="noopener noreferrer">Official IYMC</a>
+          </div>
+          <div class="certificate-year">2025 Edition</div>
+          <div class="stage-row" aria-label="IYMC 2025 progress">
+            <span class="stage-pill complete">✓ Qualification Round</span>
+            <span class="stage-arrow">→</span>
+            <span class="stage-pill award">★ Special Honour</span>
+            <span class="stage-arrow">→</span>
+            <span class="stage-pill current">Qualified for Pre-Final</span>
+          </div>
+          <p>Recognized with Special Honour in the Qualification Round and advanced to the Pre-Final stage.</p>
+          <div class="journey-actions">
+            <a class="evidence-link primary" href="https://drive.google.com/file/d/1CBY9ZT4GcqkeKlMIgwm-wTqh9nzD4HSB/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Qualification Certificate</a>
+            <a class="evidence-link" href="https://drive.google.com/file/d/1Llhox2lqZ9uLXUTWveyis5LD2aCq0Nju/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Pre-Final Evidence</a>
+          </div>
+        </article>
+
+        <article class="journey-card">
+          <div class="journey-head">
+            <div>
+              <span class="tag gold">Physics</span>
+              <h3>International Physics Competition (IPhyC)</h3>
+            </div>
+            <a class="evidence-link" href="https://iphyc.org/" target="_blank" rel="noopener noreferrer">Official IPhyC</a>
+          </div>
+          <div class="certificate-year">2025 Edition</div>
+          <div class="stage-row" aria-label="IPhyC 2025 progress">
+            <span class="stage-pill complete">✓ Qualification Round</span>
+            <span class="stage-arrow">→</span>
+            <span class="stage-pill award">★ Special Honour</span>
+            <span class="stage-arrow">→</span>
+            <span class="stage-pill current">Qualified for Pre-Final</span>
+          </div>
+          <p>Recognized with Special Honour in the Qualification Round and advanced to the Pre-Final stage.</p>
+          <div class="journey-actions">
+            <a class="evidence-link primary" href="https://drive.google.com/file/d/1k6jOlhneesUVoYcfPFQbVWWq9XPGuK7a/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Qualification Certificate</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <section id="certificates">
       <div class="section-head">
@@ -552,9 +805,9 @@
           <div class="certificate-icon" aria-hidden="true">🧠</div>
           <div class="certificate-meta"><span class="tag">Special Honour</span><span class="certificate-year">2026</span></div>
           <h3>International Computer Science Competition</h3>
-          <p>Qualification Round Pass, Special Honour for code successfully evaluated and passed all test cases, and qualification to the Pre-Final Round.</p>
+          <p>Qualification Round Special Honour and qualification to the Pre-Final Round.</p>
           <div class="certificate-actions">
-            <a class="evidence-link primary" href="assets/ICSC_2026_Qualification_Special_Honour.png" target="_blank" rel="noopener noreferrer">View Certificate Image</a>
+            <a class="evidence-link primary" href="https://drive.google.com/file/d/1RD7eTFKQ2Ksqhyvp1kDt9a0b1hSiP_V_/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </div>
         </article>
 
@@ -666,6 +919,8 @@
           <p>Full Platinum Scholarship and Outstanding Leadership Award.</p>
           <div class="certificate-actions">
             <a class="evidence-link primary" href="https://drive.google.com/file/d/1Gh5BpvITq-Ngqlbjuw6C-AzT3H-E4_x_/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <a class="evidence-link" href="https://youtu.be/M7P0fuPF0Lg" target="_blank" rel="noopener noreferrer">Camp Journey</a>
+            <a class="evidence-link" href="https://youtu.be/a57nPOai-ng" target="_blank" rel="noopener noreferrer">Interview</a>
           </div>
         </article>
 
@@ -721,7 +976,7 @@
             <li><strong>CodeCombat International Coding Olympiad:</strong> Global 1st Place.</li>
             <li><strong>International Cybersecurity Olympiad 2025:</strong> Team Myanmar representative at NUS.</li>
             <li><strong>IJCO / NJCO:</strong> International and national junior cybersecurity medal achievements.</li>
-            <li><strong>ICSC 2026:</strong> Qualification Round Pass, Special Honour, and Pre-Final qualification; <strong>ICSC 2025:</strong> Final Round participant and 2nd National Award, Myanmar.</li>
+            <li><strong>ICSC 2025:</strong> Final Round participant and 2nd National Award, Myanmar.</li>
           </ul>
         </article>
       </div>
@@ -787,6 +1042,9 @@
           <span class="tag">Leadership</span>
           <h3>IJHS / Global Student Leadership Council</h3>
           <p>Council Member under the Student Development Committee, supporting peer-to-peer training, tutoring, and youth development activities.</p>
+          <div class="certificate-actions">
+            <a class="evidence-link primary" href="https://ijhscommunity.org/about-us/slc/" target="_blank" rel="noopener noreferrer">Official GSLC Member List</a>
+          </div>
         </article>
         <article class="card">
           <span class="tag green">GSLC SPARK</span>
@@ -807,6 +1065,72 @@
           <span class="tag">Global Youth</span>
           <h3>YALA Shenzhen</h3>
           <p>Full Platinum Scholarship recipient and Outstanding Leader Award honoree.</p>
+          <div class="certificate-actions">
+            <a class="evidence-link" href="https://youtu.be/M7P0fuPF0Lg" target="_blank" rel="noopener noreferrer">Watch Camp Journey</a>
+            <a class="evidence-link primary" href="https://youtu.be/a57nPOai-ng" target="_blank" rel="noopener noreferrer">Watch Interview</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="media">
+      <div class="section-head">
+        <div>
+          <h2>Official Recognition & Media</h2>
+          <p class="section-note">Official external recognition and video features that add context beyond certificates and award listings.</p>
+        </div>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card official">
+          <div class="media-icon" aria-hidden="true">🌐</div>
+          <div>
+            <span class="tag">Official Listing</span>
+            <h3>IJHS Global Student Leadership Council</h3>
+            <p>Sai Han Myo Shane is listed among the active GSLC members under the Student Development Committee.</p>
+          </div>
+          <a class="evidence-link primary" href="https://ijhscommunity.org/about-us/slc/" target="_blank" rel="noopener noreferrer">View Official Member List</a>
+        </article>
+
+        <article class="media-card">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/M7P0fuPF0Lg"
+              title="Inspiring YALA Camp Journey of NIEC Student Sai Han Myo Shane"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="media-body">
+            <span class="tag gold">YALA Journey</span>
+            <h3>Inspiring YALA Camp Journey of NIEC Student Sai Han Myo Shane</h3>
+            <p>A feature presenting Junaid’s international leadership-camp journey and experience.</p>
+            <div class="certificate-actions">
+              <a class="evidence-link primary" href="https://youtu.be/M7P0fuPF0Lg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="media-card">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/a57nPOai-ng"
+              title="Sai Han Myo Shane (Junaid) | YALA 2025 Platinum Scholar & Outstanding Leader Interview"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="media-body">
+            <span class="tag gold">Interview</span>
+            <h3>YALA 2025 Platinum Scholar & Outstanding Leader Interview</h3>
+            <p>Sai Han Myo Shane (Junaid) reflects on his YALA experience, scholarship, and leadership recognition.</p>
+            <div class="certificate-actions">
+              <a class="evidence-link primary" href="https://youtu.be/a57nPOai-ng" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
@@ -815,14 +1139,14 @@
       <div class="section-head">
         <div>
           <h2>Documents and Links</h2>
-          <p class="section-note">Useful public documents and links for ICSC Ambassador application, academic review, fellowship review, and achievement evidence.</p>
+          <p class="section-note">Useful public documents and links for academic, fellowship, and achievement review.</p>
         </div>
       </div>
       <div class="grid two">
         <article class="card">
           <span class="tag green">Portfolio PDF</span>
           <h3>Professional Resume & Technical Portfolio</h3>
-          <p><a href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download the updated ICSC Ambassador CV and technical portfolio PDF</a>.</p>
+          <p><a href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download the final submitted two-page PDF portfolio</a>.</p>
         </article>
         <article class="card">
           <span class="tag green">Technical Work Sample</span>
@@ -837,7 +1161,17 @@
         <article class="card">
           <span class="tag">Certificate Gallery</span>
           <h3>Selected Certificates & Evidence</h3>
-          <p><a href="#certificates">Browse the curated public certificate gallery</a>. Original files open as local assets or Google Drive view-only evidence links.</p>
+          <p><a href="#certificates">Browse the curated public certificate gallery</a>. Original files open in Google Drive with view-only access.</p>
+        </article>
+        <article class="card">
+          <span class="tag green">Competition Journey</span>
+          <h3>Edu.Harbour Competitions</h3>
+          <p><a href="#eduharbour">View Junaid’s multi-edition ICSC, IYMC, and IPhyC progression</a>.</p>
+        </article>
+        <article class="card">
+          <span class="tag gold">Official Media</span>
+          <h3>Recognition & Interviews</h3>
+          <p><a href="#media">View the official GSLC listing and YALA video features</a>.</p>
         </article>
       </div>
     </section>
@@ -852,11 +1186,26 @@
   </main>
 
   <footer>
-    © 2026 Sai Han Myo Shane (Junaid). Academic portfolio content managed by parent/guardian.
+    © 2026 Sai Han Myo Shane (Junaid). Academic portfolio content managed by parent/guardian. Website V2.5.
   </footer>
 
   <script>
     (function () {
+      const editionTabs = Array.from(document.querySelectorAll('[data-edition-tab]'));
+      editionTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.getAttribute('data-edition-tab');
+          editionTabs.forEach((other) => {
+            const selected = other === tab;
+            other.setAttribute('aria-selected', selected ? 'true' : 'false');
+            const panel = document.getElementById(other.getAttribute('data-edition-tab'));
+            if (panel) panel.hidden = !selected;
+          });
+          const panel = document.getElementById(targetId);
+          if (panel) panel.focus({ preventScroll: true });
+        });
+      });
+
       const buttons = Array.from(document.querySelectorAll('.filter-button'));
       const cards = Array.from(document.querySelectorAll('.certificate-card'));
       if (!buttons.length || !cards.length) return;
