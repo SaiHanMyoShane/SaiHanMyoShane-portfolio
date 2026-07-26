@@ -1,19 +1,26 @@
-Junaid Academic Portfolio Website — Version 2.5
+Portfolio Website — Version 2.6
 
-Updated: 25 July 2026
+Updated: 26 July 2026
+
+Purpose:
+- Presents a broad academic, technical, competition, research, leadership, and community portfolio
+- Includes ICSC and SASH-related material as parts of the wider portfolio
+- Is not presented as a website created solely for any one programme, competition, fellowship, or application
 
 Added:
-- Edu.Harbour Competition Journey with accessible edition tabs for ICSC 2025 and 2026
-- IYMC 2025 and IPhyC 2025 progression cards with certificate evidence
-- Official IJHS GSLC member-list verification link
-- YALA camp-journey and Outstanding Leader interview videos
-- Privacy-enhanced, lazy-loaded YouTube embeds with direct-link fallbacks
-- New Official Recognition & Media section
-- Updated navigation, metadata, structured data, document links, and mobile styling
+- An official ICSC Instagram post in the Official Recognition & Media section
+- A direct and accessible “View Instagram Post” link that opens in a new tab
+- Clear wording explaining that the Instagram post is supporting media, while certificates and official competition records remain the primary evidence
+- A SocialMediaPosting structured-data entry
+- Updated metadata, section description, and footer version
 
 Preserved:
+- Edu.Harbour Competition Journey with separate ICSC 2025 and 2026 edition tabs
+- IYMC and IPhyC progression cards
+- Official IJHS GSLC member listing
+- YALA camp journey and Outstanding Leader interview videos
+- Certificate Gallery
 - Correct Vercel portfolio URL
 - Final submitted SaiHanMyoShane_Technical_Portfolio_SASH.pdf
 - WISE-StudentLLM-Bench work-sample package
-- Certificate Gallery
 - AIdea and planned Mustang Math Tournament content
