@@ -1,26 +1,23 @@
-Portfolio Website — Version 2.6
+Junaid Academic Portfolio Website — Version 2.7
 
-Updated: 26 July 2026
+Built from Version 2.6 and updated with Zero2Entrepreneur official programme media.
 
-Purpose:
-- Presents a broad academic, technical, competition, research, leadership, and community portfolio
-- Includes ICSC and SASH-related material as parts of the wider portfolio
-- Is not presented as a website created solely for any one programme, competition, fellowship, or application
+V2.7 additions:
+- Added the official Zero2Entrepreneur Z2E Malaysia at Asia School of Business 2025 YouTube video.
+- Added a responsive privacy-enhanced video embed under Official Recognition & Media.
+- Expanded the Zero2Entrepreneur certificate card with the official video link.
+- Expanded the Leadership, Innovation & Global Exposure card with the seven-day programme context, Full Scholarship, and Team First Prize.
+- Added the official ASBhive programme-details link.
+- Added the Zero2Entrepreneur video to structured metadata.
+- Updated metadata, document summary, README, and footer to Version 2.7.
 
-Added:
-- An official ICSC Instagram post in the Official Recognition & Media section
-- A direct and accessible “View Instagram Post” link that opens in a new tab
-- Clear wording explaining that the Instagram post is supporting media, while certificates and official competition records remain the primary evidence
-- A SocialMediaPosting structured-data entry
-- Updated metadata, section description, and footer version
-
-Preserved:
-- Edu.Harbour Competition Journey with separate ICSC 2025 and 2026 edition tabs
-- IYMC and IPhyC progression cards
-- Official IJHS GSLC member listing
-- YALA camp journey and Outstanding Leader interview videos
+Previous content preserved:
+- Edu.Harbour Competition Journey
 - Certificate Gallery
+- ICSC official Instagram feature
+- Official GSLC member listing
+- YALA journey and interview videos
+- AIdea and Mustang Math Tournament cards
+- Final submitted SASH portfolio PDF
+- WISE-StudentLLM-Bench technical work sample
 - Correct Vercel portfolio URL
-- Final submitted SaiHanMyoShane_Technical_Portfolio_SASH.pdf
-- WISE-StudentLLM-Bench work-sample package
-- AIdea and planned Mustang Math Tournament content
