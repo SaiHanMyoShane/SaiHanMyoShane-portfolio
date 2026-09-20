@@ -1,23 +1,17 @@
-Junaid Academic Portfolio Website — Version 2.7
+Junaid Academic Portfolio Website — Version 2.9
+Date: 20 September 2026
 
-Built from Version 2.6 and updated with Zero2Entrepreneur official programme media.
+V2.9 additions / corrections:
+- Updated CV asset and website URL.
+- IGCSE Computer Science Grade 9 and ICT Grade 8 added.
+- IMO 2027 Myanmar team-selection roadmap added.
+- Pre-TST passed / qualified and registered for the next selection phase.
+- TST1, TST2, MNO, EMC and APMO selection stage shown.
+- ICSC 2026 outcome corrected to Pre-Final completed; did not advance to Final.
+- Official ICSC Ambassador 2026 added.
+- SASMO 2026 updated to Silver.
+- SASH-specific downloadable CV/ZIP dependencies removed or replaced with current assets/live GitHub.
+- Footer updated to Website V2.9.
 
-V2.7 additions:
-- Added the official Zero2Entrepreneur Z2E Malaysia at Asia School of Business 2025 YouTube video.
-- Added a responsive privacy-enhanced video embed under Official Recognition & Media.
-- Expanded the Zero2Entrepreneur certificate card with the official video link.
-- Expanded the Leadership, Innovation & Global Exposure card with the seven-day programme context, Full Scholarship, and Team First Prize.
-- Added the official ASBhive programme-details link.
-- Added the Zero2Entrepreneur video to structured metadata.
-- Updated metadata, document summary, README, and footer to Version 2.7.
-
-Previous content preserved:
-- Edu.Harbour Competition Journey
-- Certificate Gallery
-- ICSC official Instagram feature
-- Official GSLC member listing
-- YALA journey and interview videos
-- AIdea and Mustang Math Tournament cards
-- Final submitted SASH portfolio PDF
-- WISE-StudentLLM-Bench technical work sample
-- Correct Vercel portfolio URL
+Public URL remains:
+https://sai-han-myo-shane-portfolio.vercel.app/
