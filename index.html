@@ -6,9 +6,9 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Sai Han Myo Shane (Junaid) | AI Safety & Academic Portfolio</title>
-  <meta name="description" content="Academic and AI safety portfolio of Sai Han Myo Shane, also known as Junaid, a Myanmar high-school student and IOAI 2026 Myanmar National Team Member with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, Edu.Harbour competitions, student leadership, innovation and entrepreneurship, responsible AI literacy, official recognition, interviews, official programme videos, social-media features, and a curated public certificate and evidence gallery." />
-  <meta name="keywords" content="Sai Han Myo Shane, Junaid, Myanmar, IOAI 2026, AI safety, LLM evaluation, WISE-StudentLLM-Bench, cybersecurity, CodeCombat, ICSC, IYMC, IPhyC, Edu.Harbour, ICO, NIEC International School, GSLC, SPARK AIdea, Mustang Math Tournament, YALA, Zero2Entrepreneur, Asia School of Business, innovation, entrepreneurship, official bootcamp video, interviews, Instagram, ICSC media, certificates, academic evidence, awards gallery" />
+  <title>Sai Han Myo Shane (Junaid) | AI Research, STEM & Academic Portfolio</title>
+  <meta name="description" content="Academic and technical portfolio of Sai Han Myo Shane, also known as Junaid, a Myanmar Grade 9 / Year 10 student and IOAI 2026 Myanmar National Team Member. Highlights include Pearson Edexcel International GCSE Computer Science Grade 9 and ICT Grade 8, qualification to Myanmar's IMO 2027 team-selection pathway after passing Pre-TST, AI/LLM evaluation interests, cybersecurity, computing, mathematics, leadership, scholarships, and verified competition evidence." />
+  <meta name="keywords" content="Sai Han Myo Shane, Junaid, Myanmar, IOAI 2026, IMO 2027, Pre-TST, TST1, TST2, MNO, EMC, APMO, Pearson Edexcel International GCSE, Computer Science Grade 9, ICT Grade 8, AI safety, LLM evaluation, WISE-StudentLLM-Bench, cybersecurity, CodeCombat, ICSC Ambassador, ICSC, IYMC, IPhyC, Edu.Harbour, SIMCC, SASMO, AMO, SMC, SIMOC, SMGF, STEAM AHEAD, NJCO, IJCO, VNJSO, VIJSO, SIAT, IJAO, IJHS, ICO, NIEC International School, GSLC, Student Development Committee, SPARK AIdea, Mustang Math Tournament, YALA, Zero2Entrepreneur, Asia School of Business, innovation, entrepreneurship, certificates, academic evidence, awards gallery" />
   <meta name="author" content="Sai Han Myo Shane" />
 
   <style>
@@ -395,6 +395,78 @@
     .journey-highlight strong { color: var(--text); }
     .journey-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
 
+
+    /* SIMCC competition and leadership journey */
+    .simcc-overview {
+      margin-bottom: 20px;
+      padding: 18px 20px;
+      border: 1px solid #dce8df;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f4fbf7, #fbfcff);
+      color: var(--muted);
+    }
+    .simcc-overview strong { color: var(--text); }
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .pathway-card {
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 30px rgba(20, 32, 60, 0.07);
+    }
+    .pathway-card.featured { grid-column: 1 / -1; }
+    .pathway-card h3 { margin: 7px 0 10px; font-size: 22px; }
+    .pathway-flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 15px 0 16px;
+    }
+    .pathway-node {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 11px;
+      border-radius: 999px;
+      border: 1px solid #cdd7ff;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .pathway-node.green { background: var(--green-soft); border-color: #bfe7df; color: var(--accent-2); }
+    .pathway-node.gold { background: var(--gold-soft); border-color: #f0d58d; color: #7d5b0f; }
+    .pathway-arrow { color: #9aa4b7; font-weight: 900; }
+    .milestone-list { margin: 12px 0 0; padding-left: 20px; color: var(--muted); }
+    .milestone-list li { margin: 7px 0; }
+    .leadership-ladder {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin: 18px 0;
+      align-items: stretch;
+    }
+    .ladder-step {
+      display: grid;
+      place-items: center;
+      min-height: 78px;
+      padding: 11px 8px;
+      text-align: center;
+      border-radius: 15px;
+      border: 1px solid var(--line);
+      background: #fbfcff;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    .ladder-step.active { background: var(--green-soft); border-color: #bfe7df; color: var(--accent-2); }
+    .ladder-step.final { background: var(--gold-soft); border-color: #f0d58d; color: #7d5b0f; }
+    .simcc-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+
     /* Official recognition and media */
     .media-grid {
       display: grid;
@@ -443,8 +515,9 @@
 
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; padding-top: 52px; }
-      .grid, .grid.two, .certificate-grid, .journey-grid, .media-grid { grid-template-columns: 1fr; }
-      .journey-card.featured, .media-card.official { grid-column: auto; }
+      .grid, .grid.two, .certificate-grid, .journey-grid, .pathway-grid, .media-grid { grid-template-columns: 1fr; }
+      .journey-card.featured, .pathway-card.featured, .media-card.official { grid-column: auto; }
+      .leadership-ladder { grid-template-columns: 1fr 1fr; }
       .media-card.official { grid-template-columns: auto 1fr; }
       .media-card.official .evidence-link { grid-column: 1 / -1; justify-self: start; }
       .timeline-item { grid-template-columns: 1fr; }
@@ -459,7 +532,7 @@
     "@type": "Person",
     "name": "Sai Han Myo Shane",
     "alternateName": "Junaid",
-    "description": "Myanmar high-school student and IOAI 2026 Myanmar National Team Member with interests in AI safety, LLM evaluation, cybersecurity, computing, mathematics, Edu.Harbour competitions, student leadership, innovation and entrepreneurship, responsible AI literacy, official recognition, interviews, official programme videos, social-media features, and a curated public certificate and evidence gallery.",
+    "description": "Myanmar Grade 9 / Year 10 student and IOAI 2026 Myanmar National Team Member with interests in AI research, LLM evaluation, cybersecurity, computing, mathematics, and responsible technology. Academic highlights include Pearson Edexcel International GCSE Computer Science Grade 9 and ICT Grade 8; he has passed Pre-TST and qualified/registered for Myanmar's IMO 2027 team-selection pathway.",
     "nationality": "Myanmar",
     "affiliation": {
       "@type": "EducationalOrganization",
@@ -473,6 +546,7 @@
       "Computer Science",
       "Cybersecurity",
       "Mathematics",
+      "Mathematical Olympiad",
       "Physics",
       "Leadership",
       "Peer Teaching",
@@ -518,7 +592,9 @@
         <a href="#about">About</a>
         <a href="#ai-safety">AI Safety Project</a>
         <a href="#achievements">Achievements</a>
+        <a href="#imo2027">IMO 2027</a>
         <a href="#eduharbour">Edu.Harbour Journey</a>
+        <a href="#simcc">SIMCC Journey</a>
         <a href="#certificates">Certificates</a>
         <a href="#computing">Computing & Cybersecurity</a>
         <a href="#academics">Academics</a>
@@ -533,27 +609,28 @@
   <div class="hero">
     <div class="hero-inner">
       <div>
-        <div class="eyebrow">AI Safety • LLM Evaluation • Myanmar Student Portfolio</div>
+        <div class="eyebrow">AI Research • LLM Evaluation • STEM • Myanmar Student Portfolio</div>
         <h1>Sai Han Myo Shane<br />Junaid</h1>
         <p class="subtitle">
-          High-school / secondary student from Myanmar, IOAI 2026 Myanmar National Team Member, and developer of
-          WISE-StudentLLM-Bench, a preliminary student-facing LLM safety evaluation and AI safety literacy work sample.
+          Grade 9 / Year 10 student from Myanmar, IOAI 2026 Myanmar National Team Member, and participant in Myanmar's IMO 2027 team-selection pathway after passing Pre-TST. His portfolio spans AI/LLM evaluation, cybersecurity, mathematics, and a preliminary student-facing LLM safety work sample.
         </p>
         <div class="hero-buttons">
           <a class="button" href="#ai-safety">View AI Safety Project</a>
           <a class="button secondary" href="https://github.com/SaiHanMyoShane/WISE-StudentLLM-Bench" target="_blank" rel="noopener">GitHub Repository</a>
-          <a class="button green" href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download Final Portfolio PDF</a>
+          <a class="button green" href="assets/Sai_Han_Myo_Shane_Research_Technical_CV_2026.pdf">Download Updated Research CV</a>
         </div>
       </div>
 
       <aside class="profile-card">
         <h2>Profile Highlights</h2>
         <ul class="fact-list">
-          <li><strong>Current stage:</strong> High-school / secondary student</li>
+          <li><strong>Current stage:</strong> Grade 9 / Year 10, AY 2026/27</li>
           <li><strong>School:</strong> NIEC International School, Yangon</li>
-          <li><strong>Pathway:</strong> Cambridge Upper Secondary / Cambridge ICE</li>
-          <li><strong>Recognition:</strong> IOAI 2026 Myanmar National Team Member</li>
-          <li><strong>Technical focus:</strong> AI safety, LLM evaluation, cybersecurity, coding, mathematics</li>
+          <li><strong>Scholarship:</strong> Two-year 50% academic scholarship, AY 2026/27-2027/28</li>
+          <li><strong>National representation:</strong> IOAI 2026 Myanmar National Team Member</li>
+          <li><strong>IGCSE:</strong> Computer Science Grade 9; ICT Grade 8</li>
+          <li><strong>Mathematics pathway:</strong> Passed Pre-TST; qualified/registered for IMO 2027 team selection</li>
+          <li><strong>Technical focus:</strong> LLM evaluation, AI safety, cybersecurity, coding, mathematics</li>
         </ul>
       </aside>
     </div>
@@ -570,10 +647,11 @@
 
       <div class="bio">
         <p>
-          Sai Han Myo Shane, also known as Junaid, is a high-school student from Myanmar with a developing technical focus in
+          Sai Han Myo Shane, also known as Junaid, is a Grade 9 / Year 10 student from Myanmar with a developing technical focus in
           artificial intelligence, AI safety, LLM evaluation, cybersecurity, computing, mathematics, and responsible technology use.
-          He is pursuing the Cambridge Upper Secondary / Cambridge ICE pathway at NIEC International School in Yangon and has
-          received a two-year academic half scholarship.
+          He is pursuing the Cambridge Upper Secondary / Cambridge ICE pathway at NIEC International School in Yangon on a two-year
+          50% academic scholarship. As a private candidate, he completed Pearson Edexcel International GCSE Computer Science with Grade 9
+          and ICT with Grade 8 in the May/June 2026 series.
         </p>
         <p>
           His current research direction is WISE-StudentLLM-Bench: a preliminary student-facing LLM safety evaluation artifact that
@@ -656,9 +734,9 @@
         </article>
 
         <article class="card">
-          <span class="tag">ICSC 2025</span>
-          <h3>International Computer Science Competition</h3>
-          <p>Final Round Participant; 2nd National Award, Myanmar; highest score among Myanmar participants in the Final Round; Special Honours in the Qualification Round with a score of 23.7/25.</p>
+          <span class="tag">ICSC 2025 / 2026</span>
+          <h3>ICSC Competition & Ambassador</h3>
+          <p>2025 Final Round participant and 2nd National Award, Myanmar; approved as an Official ICSC Ambassador in 2026.</p>
         </article>
 
         <article class="card">
@@ -672,9 +750,59 @@
           <h3>IJHS / GSLC</h3>
           <p>Council Member, Global Student Leadership Council, Student Development Committee; participant in SPARK project AIdea.</p>
         </article>
+
+        <article class="card">
+          <span class="tag green">Mathematics</span>
+          <h3>IMO 2027 Team-Selection Pathway</h3>
+          <p>Passed the Pre-TST stage and qualified/registered for Myanmar's IMO 2027 national team-selection pathway.</p>
+        </article>
+
+        <article class="card">
+          <span class="tag gold">Academic</span>
+          <h3>Pearson Edexcel International GCSE</h3>
+          <p>Computer Science Grade 9 and ICT Grade 8 in the May/June 2026 examination series.</p>
+        </article>
       </div>
     </section>
 
+
+    <section id="imo2027">
+      <div class="section-head">
+        <div>
+          <h2>IMO 2027 Myanmar Team-Selection Roadmap</h2>
+          <p class="section-note">Junaid has passed the Pre-TST stage and is qualified/registered for the next national selection phase. This is a selection pathway, not a claim of final IMO team membership.</p>
+        </div>
+      </div>
+
+      <div class="pathway-grid">
+        <article class="pathway-card featured">
+          <span class="tag green">Current Pathway</span>
+          <h3>From MOMC Junior II to Myanmar's IMO 2027 Team Selection</h3>
+          <div class="pathway-flow" aria-label="IMO 2027 Myanmar selection pathway">
+            <span class="pathway-node green">MOMC Junior II</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node green">Pre-TST Passed</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node">TST1</span>
+            <span class="pathway-node">TST2</span>
+            <span class="pathway-node">MNO</span>
+            <span class="pathway-node">EMC</span>
+            <span class="pathway-node">APMO</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">IMSC 2027 / Team Selection</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">IMO 2027</span>
+          </div>
+          <div class="journey-highlight"><strong>Selection basis:</strong> according to the Mathematical Society of Myanmar notice supplied for Junaid's pathway, candidates registered for this stage compete in TST1, TST2, the Myanmar National Olympiad (MNO), European Mathematical Cup (EMC), and Asian Pacific Mathematical Olympiad (APMO). Results across those assessments are used for later 2027 selection decisions.</div>
+          <ul class="milestone-list">
+            <li><strong>Completed:</strong> MOMC Junior II progression and Pre-TST qualification.</li>
+            <li><strong>Current status:</strong> qualified/registered for the national team-selection pathway.</li>
+            <li><strong>Next assessments:</strong> TST1, TST2, MNO, EMC, and APMO.</li>
+            <li><strong>Important wording:</strong> Junaid should be described as an IMO 2027 team-selection candidate, not yet as an IMO team member.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
 
     <section id="eduharbour">
@@ -707,11 +835,14 @@
               <span class="stage-arrow">→</span>
               <span class="stage-pill award">★ Special Honour</span>
               <span class="stage-arrow">→</span>
-              <span class="stage-pill current">Pre-Finalist</span>
+              <span class="stage-pill complete">✓ Pre-Final Round</span>
+              <span class="stage-arrow">→</span>
+              <span class="stage-pill">Did not advance to Final</span>
             </div>
-            <div class="journey-highlight"><strong>Current status:</strong> Passed the 2026 Qualification Round with Special Honour and qualified for the Pre-Final Round.</div>
+            <div class="journey-highlight"><strong>2026 outcome:</strong> Passed the Qualification Round with Special Honour, advanced to the Pre-Final Round, and did not advance to the Final. Separately, Junaid was approved as an Official ICSC Ambassador in 2026.</div>
             <div class="journey-actions">
               <a class="evidence-link primary" href="https://drive.google.com/file/d/1RD7eTFKQ2Ksqhyvp1kDt9a0b1hSiP_V_/view?usp=sharing" target="_blank" rel="noopener noreferrer">Qualification Certificate</a>
+              <a class="evidence-link" href="https://icscompetition.org/sshane" target="_blank" rel="noopener noreferrer">Official Ambassador Profile</a>
             </div>
           </div>
 
@@ -777,6 +908,123 @@
           <p>Recognized with Special Honour in the Qualification Round and advanced to the Pre-Final stage.</p>
           <div class="journey-actions">
             <a class="evidence-link primary" href="https://drive.google.com/file/d/1k6jOlhneesUVoYcfPFQbVWWq9XPGuK7a/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Qualification Certificate</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="simcc">
+      <div class="section-head">
+        <div>
+          <h2>SIMCC Competition & Leadership Journey</h2>
+          <p class="section-note">A curated view of how Junaid’s SIMCC-associated competition experience connects mathematics, science, cybersecurity and arts with STEAM AHEAD, IJHS recognition, YALA, and his current GSLC role in the Student Development Committee.</p>
+        </div>
+        <a class="evidence-link" href="https://simcc.org/" target="_blank" rel="noopener noreferrer">Official SIMCC</a>
+      </div>
+
+      <div class="simcc-overview">
+        <strong>How to read this section:</strong> the pathway arrows show the wider competition ecosystem and Junaid’s progression through it. Qualification rules can vary by competition and year, so the cards distinguish the pathway from Junaid’s confirmed results.
+      </div>
+
+      <div class="pathway-grid">
+        <article class="pathway-card">
+          <span class="tag green">Mathematics</span>
+          <h3>Math Competition Pathway</h3>
+          <div class="pathway-flow" aria-label="SIMCC mathematics pathway">
+            <span class="pathway-node">SMC / SASMO / AMO</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node green">SMGF / SIMOC</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">STEAM AHEAD — IJMO</span>
+          </div>
+          <ul class="milestone-list">
+            <li><strong>SMC 2024:</strong> Outstanding Award.</li>
+            <li><strong>SASMO:</strong> Bronze in 2024 and 2025; Silver in 2026.</li>
+            <li><strong>AMO:</strong> Bronze in 2024 and 2025.</li>
+            <li><strong>SMGF:</strong> Bronze in 2025, progressing to Silver in 2026.</li>
+            <li><strong>SIMOC 2025:</strong> Maths Warriors Challenge Bronze and Math Olympiad Contest Honourable Mention.</li>
+          </ul>
+          <div class="simcc-actions">
+            <a class="evidence-link" href="https://steamahead.simcc.org/ijmo/" target="_blank" rel="noopener noreferrer">Official IJMO</a>
+          </div>
+        </article>
+
+        <article class="pathway-card">
+          <span class="tag">Science</span>
+          <h3>Science Competition Pathway</h3>
+          <div class="pathway-flow" aria-label="SIMCC science pathway">
+            <span class="pathway-node">VNJSO / Vanda Science</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">STEAM AHEAD — VIJSO</span>
+          </div>
+          <ul class="milestone-list">
+            <li><strong>VNJSO 2024:</strong> Bronze Award; school and country first in Junaid’s recorded results.</li>
+            <li><strong>VNJSO 2025:</strong> Bronze Award.</li>
+            <li>The pathway provides a bridge toward the Vanda International Junior Science Olympiad at STEAM AHEAD.</li>
+          </ul>
+          <div class="simcc-actions">
+            <a class="evidence-link" href="https://steamahead.simcc.org/vijso/" target="_blank" rel="noopener noreferrer">Official VIJSO</a>
+          </div>
+        </article>
+
+        <article class="pathway-card">
+          <span class="tag">Cybersecurity</span>
+          <h3>NJCO → IJCO</h3>
+          <div class="pathway-flow" aria-label="SIMCC cybersecurity pathway">
+            <span class="pathway-node">NJCO</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">STEAM AHEAD — IJCO</span>
+          </div>
+          <ul class="milestone-list">
+            <li><strong>NJCO 2024:</strong> Bronze Award; country first; global rank 98.</li>
+            <li><strong>IJCO 2024:</strong> Individual Bronze and Team Silver.</li>
+            <li><strong>NJCO 2025:</strong> Silver Award; country first; global rank 26.</li>
+            <li><strong>IJCO 2025:</strong> Team Silver.</li>
+          </ul>
+          <div class="simcc-actions">
+            <a class="evidence-link" href="https://steamahead.simcc.org/steam-ahead-results/" target="_blank" rel="noopener noreferrer">STEAM AHEAD Results</a>
+          </div>
+        </article>
+
+        <article class="pathway-card">
+          <span class="tag gold">Arts</span>
+          <h3>SIAT → IJAO</h3>
+          <div class="pathway-flow" aria-label="SIMCC arts pathway">
+            <span class="pathway-node">SIAT</span>
+            <span class="pathway-arrow">→</span>
+            <span class="pathway-node gold">STEAM AHEAD — IJAO</span>
+          </div>
+          <ul class="milestone-list">
+            <li><strong>SIAT 2025:</strong> Bronze Award in Digital Art for “My New AI World”.</li>
+            <li><strong>IJAO 2025:</strong> Silver Award through STEAM AHEAD.</li>
+            <li>This pathway shows a creative strand alongside Junaid’s computing and STEM work.</li>
+          </ul>
+          <div class="simcc-actions">
+            <a class="evidence-link" href="https://steamahead.simcc.org/ijao/" target="_blank" rel="noopener noreferrer">Official IJAO</a>
+          </div>
+        </article>
+
+        <article class="pathway-card featured">
+          <span class="tag green">Recognition → Leadership</span>
+          <h3>From Competition Achievement to IJHS, YALA and GSLC</h3>
+          <p>Competition results across the SIMCC ecosystem can contribute IJHS Points (ISPs), connecting academic achievement with recognition and leadership development. Junaid’s own journey now extends beyond competition into international youth leadership.</p>
+
+          <div class="leadership-ladder" aria-label="Junaid SIMCC and IJHS leadership progression">
+            <div class="ladder-step">Competition<br>Achievements</div>
+            <div class="ladder-step">IJHS Points<br>(ISP)</div>
+            <div class="ladder-step active">International Junior<br>Honor Society</div>
+            <div class="ladder-step active">YALA<br>2025</div>
+            <div class="ladder-step active">GSLC</div>
+            <div class="ladder-step final">Student Development<br>Committee (SDC)</div>
+          </div>
+
+          <div class="journey-highlight"><strong>Junaid’s leadership milestones:</strong> YALA 2025 Platinum Scholarship recipient and Outstanding Leader; GSLC Council Member under the Student Development Committee; participant in SPARK project AIdea; and preparing for the planned GSLC–Mustang Math Tournament collaboration supporting younger students in Olympiad mathematics.</div>
+
+          <div class="simcc-actions">
+            <a class="evidence-link primary" href="https://ijhscommunity.org/about-us/slc/" target="_blank" rel="noopener noreferrer">Official GSLC Member List</a>
+            <a class="evidence-link" href="https://youtu.be/M7P0fuPF0Lg" target="_blank" rel="noopener noreferrer">YALA Journey</a>
+            <a class="evidence-link" href="https://youtu.be/a57nPOai-ng" target="_blank" rel="noopener noreferrer">YALA Interview</a>
+            <a class="evidence-link" href="https://steamahead.simcc.org/" target="_blank" rel="noopener noreferrer">Official STEAM AHEAD</a>
           </div>
         </article>
       </div>
@@ -1013,7 +1261,7 @@
           <div class="year">2026</div>
           <div>
             <h3>Pearson Edexcel International GCSE</h3>
-            <p>Completed ICT and Computer Science early as a private candidate through ProQual Professional Qualification.</p>
+            <p>Pearson Edexcel International GCSE Computer Science: Grade 9; Information and Communication Technology (ICT): Grade 8, completed as a private candidate in the May/June 2026 series.</p>
           </div>
         </div>
         <div class="timeline-item">
@@ -1192,17 +1440,22 @@
         <article class="card">
           <span class="tag green">Portfolio PDF</span>
           <h3>Professional Resume & Technical Portfolio</h3>
-          <p><a href="assets/SaiHanMyoShane_Technical_Portfolio_SASH.pdf">Download the final submitted two-page PDF portfolio</a>.</p>
+          <p><a href="assets/Sai_Han_Myo_Shane_Research_Technical_CV_2026.pdf">Download the updated two-page Research & Technical CV</a>.</p>
         </article>
         <article class="card">
           <span class="tag green">Technical Work Sample</span>
-          <h3>WISE-StudentLLM-Bench Package</h3>
-          <p><a href="assets/WISE-StudentLLM-Bench_SASH_Technical_Work_Sample.zip">Download the SASH technical work sample ZIP</a>, or view the <a href="https://github.com/SaiHanMyoShane/WISE-StudentLLM-Bench" target="_blank" rel="noopener">GitHub repository</a>.</p>
+          <h3>WISE-StudentLLM-Bench Repository</h3>
+          <p>View the current <a href="https://github.com/SaiHanMyoShane/WISE-StudentLLM-Bench" target="_blank" rel="noopener">GitHub repository</a>, including the preliminary evaluation design, documentation, and analysis materials.</p>
         </article>
         <article class="card">
           <span class="tag">Website</span>
           <h3>Personal Website</h3>
           <p>Portfolio: <a href="https://sai-han-myo-shane-portfolio.vercel.app" target="_blank" rel="noopener">https://sai-han-myo-shane-portfolio.vercel.app</a>.</p>
+        </article>
+        <article class="card">
+          <span class="tag green">Mathematics Pathway</span>
+          <h3>IMO 2027 Team Selection</h3>
+          <p><a href="#imo2027">View Junaid's current Myanmar IMO 2027 team-selection roadmap</a>, including Pre-TST qualification and the five-assessment selection phase.</p>
         </article>
         <article class="card">
           <span class="tag">Certificate Gallery</span>
@@ -1213,6 +1466,11 @@
           <span class="tag green">Competition Journey</span>
           <h3>Edu.Harbour Competitions</h3>
           <p><a href="#eduharbour">View Junaid’s multi-edition ICSC, IYMC, and IPhyC progression</a>.</p>
+        </article>
+        <article class="card">
+          <span class="tag green">Competition & Leadership Journey</span>
+          <h3>SIMCC Journey</h3>
+          <p><a href="#simcc">View Junaid’s mathematics, science, cybersecurity and arts pathways through STEAM AHEAD, IJHS, YALA, GSLC and the Student Development Committee</a>.</p>
         </article>
         <article class="card">
           <span class="tag gold">Official Media</span>
@@ -1232,7 +1490,7 @@
   </main>
 
   <footer>
-    © 2026 Sai Han Myo Shane (Junaid). Academic portfolio content managed by parent/guardian. Website V2.7.
+    © 2026 Sai Han Myo Shane (Junaid). Academic portfolio content managed by parent/guardian. Website V2.9.
   </footer>
 
   <script>
